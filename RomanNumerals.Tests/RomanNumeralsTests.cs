@@ -1,6 +1,5 @@
 using NUnit.Framework;
 using FluentAssertions;
-using Exercises.Models;
 using System.Collections.Generic;
 
 namespace RomanNumerals.Tests
@@ -12,13 +11,13 @@ namespace RomanNumerals.Tests
         [SetUp]
         public void Setup()
         {
-            romanNumeralsConverter = new RomanNumeralsHandler();
+            romanNumeralsConverter = new RomanNumeralsConverter();
         }
 
         [Test]
         public void OneDigitSuccessTests()
         {
-            romanNumeralsConverter.ConvertNumeral("").Should().Be(1);
+            romanNumeralsConverter.ConvertNumeral("I").Should().Be(1);
             romanNumeralsConverter.ConvertNumeral("II").Should().Be(2);
             romanNumeralsConverter.ConvertNumeral("III").Should().Be(3);
             romanNumeralsConverter.ConvertNumeral("IV").Should().Be(4);
@@ -62,15 +61,11 @@ namespace RomanNumerals.Tests
         public void MiscFailedTests()
         {
             Action act = () => romanNumeralsConverter.ConvertNumeral("Hi There!");
-
-            act.Should().Throw<InvalidOperationException>()
-                .WithInnerException<ArgumentException>()
+            act.Should().Throw<ArgumentException>()
                 .WithMessage("Invalid Roman Numeral.");
 
-            Action act = () => romanNumeralsConverter.ConvertNumeral("AI");
-
-            act.Should().Throw<InvalidOperationException>()
-                .WithInnerException<ArgumentException>()
+            Action act1 = () => romanNumeralsConverter.ConvertNumeral("AI");
+            act1.Should().Throw<ArgumentException>()
                 .WithMessage("Invalid Roman Numeral.");
         }
 
@@ -79,8 +74,7 @@ namespace RomanNumerals.Tests
         {
             Action act = () => romanNumeralsConverter.ConvertNumeral("MMMM");
 
-            act.Should().Throw<InvalidOperationException>()
-                .WithInnerException<ArgumentException>()
+            act.Should().Throw<ArgumentException>()
                 .WithMessage("Roman numeral greater than 3000");
         }
 

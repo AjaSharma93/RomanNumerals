@@ -1,0 +1,12 @@
+/home/zorin/Documents/GitHub/roman-numerals-with-tdd/RomanNumerals/bin/Debug/net6.0/RomanNumerals.deps.json
+/home/zorin/Documents/GitHub/roman-numerals-with-tdd/RomanNumerals/bin/Debug/net6.0/RomanNumerals.dll
+/home/zorin/Documents/GitHub/roman-numerals-with-tdd/RomanNumerals/bin/Debug/net6.0/RomanNumerals.pdb
+/home/zorin/Documents/GitHub/roman-numerals-with-tdd/RomanNumerals/obj/Debug/net6.0/RomanNumerals.csproj.AssemblyReference.cache
+/home/zorin/Documents/GitHub/roman-numerals-with-tdd/RomanNumerals/obj/Debug/net6.0/RomanNumerals.GeneratedMSBuildEditorConfig.editorconfig
+/home/zorin/Documents/GitHub/roman-numerals-with-tdd/RomanNumerals/obj/Debug/net6.0/RomanNumerals.AssemblyInfoInputs.cache
+/home/zorin/Documents/GitHub/roman-numerals-with-tdd/RomanNumerals/obj/Debug/net6.0/RomanNumerals.AssemblyInfo.cs
+/home/zorin/Documents/GitHub/roman-numerals-with-tdd/RomanNumerals/obj/Debug/net6.0/RomanNumerals.csproj.CoreCompileInputs.cache
+/home/zorin/Documents/GitHub/roman-numerals-with-tdd/RomanNumerals/obj/Debug/net6.0/RomanNumerals.dll
+/home/zorin/Documents/GitHub/roman-numerals-with-tdd/RomanNumerals/obj/Debug/net6.0/refint/RomanNumerals.dll
+/home/zorin/Documents/GitHub/roman-numerals-with-tdd/RomanNumerals/obj/Debug/net6.0/RomanNumerals.pdb
+/home/zorin/Documents/GitHub/roman-numerals-with-tdd/RomanNumerals/obj/Debug/net6.0/ref/RomanNumerals.dll
